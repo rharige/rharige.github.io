@@ -3,7 +3,7 @@ description: Blogspace of
 meta_description: "Blogspace of Ravi"
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 logo: false
 paginate: 15
 baseurl: /
