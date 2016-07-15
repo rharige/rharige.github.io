@@ -15,21 +15,20 @@
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     <!-- Customisation  -->
     <link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+    <meta name="robots" content="noindex">
 
 </head>
 <body class="{% if page.post_class %}{{page.post_class}}{% else %}home-template{% endif %}">
+	<header class="main-header clearfix">
+		<div class="blog-name">
+		<span style="float: left;">
+		<a href="{{site.url}}" style="color:#7b6e6e;font-weight: 600;";>RAVINDRA HARIGE</a>
+		</span>
+		<span style="float: right;display: flex;font-size: 1.1rem;justify-content: center;align-items: center; color:grey;letter-spacing: 0.01rem;">&nbsp;<a href="https://github.com/rharige" style="color:grey;">github</a>&nbsp;·&nbsp;<a href="http://twitter.com/ravo" style="color:grey;">twitter</a>&nbsp;·</span></div>
+	</header>
 
     {{ content }}
-    <footer class="site-footer clearfix">
-      <section class="copyright">
-        <a href="{{ site.baseurl }}">{{ site.name }}</a> &copy; 
-              {{date format="YYYY"}} &bull; All rights reserved.
-      </section>
-      <section class="poweredby">Made with Jekyll using 
-        <a href="http://github.com/rosario/kasper">Kasper theme</a>
-      </section>
-    </footer>
-    
+    <footer class="site-footer">Ravindra Harige&copy; 2016. Made with&nbsp;<a href="https://github.com/rosario/kasper">Kasper</a>&nbsp;and powered by Jekyll.</footer>
     <script type="text/javascript" src="/assets/js/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>

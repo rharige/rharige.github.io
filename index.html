@@ -5,28 +5,6 @@ cover: 'assets/images/aurora.jpg'
 about: 'about.html'
 ---
 
-<header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
-    <nav class="main-nav overlay clearfix">
-            {% if page.logo %}
-                <a class="blog-logo" href="{{ site.baseurl }}">
-                    <img src="{{ page.logo }}" alt="Blog Logo" />
-                </a>
-            {% endif %}
-        
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{ site.name }}</h1>
-            <h2 class="page-description">
-                {% if site.description %} {{ site.description }} {% endif %}@
-                <a href="https://twitter.com/ravo" style="color:rgba(255,255,255,0.8)">ravo</a>
-            </h2>
-        </div>
-    </div>
-    
-</header>
-
-
 <main id="content" class="content" role="main">
 
 
@@ -41,7 +19,7 @@ about: 'about.html'
 <article class="index-post">
     <header class="post-header">
         <span class="post-meta"><time datetime="{{ post.date | date_to_string }}">{{ post.date | date_to_string }}</time> {{!tags prefix="on "}}</span>
-        <h2 class="post-title"><a href="{{ post.url}}">{{ post.title }}</a></h2>
+        <h2 class="post-title"><a href="{{post.url}}" style="color:#2f2e2e;">{{ post.title }}</a></h2>
         
     </header>
     <section class="post-excerpt">
@@ -70,7 +48,7 @@ about: 'about.html'
     </article> -->
     <!--  -->
 
-    {% endfor %}
+<!--     {% endfor %} -->
 
     {% include pagination.html %}
 
